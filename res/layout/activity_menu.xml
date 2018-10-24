@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+<ImageView
+    android:id="@+id/voice"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_gravity="right"
+    android:paddingTop="10dp"
+    android:src="@drawable/voiceup" 
+    />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.53"
+        android:paddingTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp"
+             />
+
+        <Button
+            android:id="@+id/restart_game"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_button"
+            android:textColor="#ffffff"
+            android:text="继续游戏" 
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            />
+         <Button
+            android:id="@+id/start_game"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_button"
+            android:textColor="#ffffff"
+            android:text="开始游戏" 
+            android:layout_centerHorizontal="true"
+             android:layout_marginBottom="30dp"
+            />
+          <Button
+            android:id="@+id/help"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_button"
+            android:textColor="#ffffff"
+            android:text="游戏帮助"
+            android:layout_centerHorizontal="true"
+             android:layout_marginBottom="30dp"
+             />
+           <Button
+            android:id="@+id/exit"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_button_click"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:text="退出游戏" />
+           
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/our_name"
+        android:layout_gravity="center"
+        android:textColor="#408a0c48" />
+
+</LinearLayout>

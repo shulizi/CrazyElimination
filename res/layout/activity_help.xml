@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <Gallery
+        android:id="@+id/helpgallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         />
+
+    <Button
+        android:id="@+id/help_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="返回菜单" 
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/our_name"
+	    android:textColor="#408a0c48" />
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ModeOneGameActivity" >
+
+    
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="6dp"
+        android:numColumns="8"
+         >
+	
+    </GridView>
+
+    <ImageView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/score" 
+        android:onClick="change"
+        />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" 
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0000"
+        
+        />
+
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/imageView1"
+        android:src="@drawable/restart"
+        android:onClick="restart"
+         />
+
+    <ImageView
+        android:id="@+id/scoreImage"
+        android:layout_width = "40dp"
+        android:layout_height="40dp"
+         android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/money1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/our_name"
+        android:textColor="#408a0c48" />
+    
+</RelativeLayout>
